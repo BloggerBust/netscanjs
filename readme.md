@@ -1,7 +1,7 @@
 #What is this about?
 Netscanjs is intended for educational pruposes only. I am currently working on a blog that uses this netscanjs to illustrate examples. Once the blog has been published I will add a link to it and improve this readme. Netscanjs is limited in many ways, but it is simple to use and worked well for my purposes.
 
-#Copy and paste convenience functions:
+#Code Example
 ```javascript
 var scan = new netscan({
     verbosity: nsVerbosity.Debug, //defaults to nsVerbosity.None
@@ -40,8 +40,6 @@ var scanHostForPorts = function(host, startPort, endPort){
         }});
 };
 ```
-#Exampmles:
-
 It is important to not call these functions concurrently. If you want to be able to use them together then you will need to make use of the callback functions. I regret not using promises now, but again the point of this library is for illustration and is not meant to be part of a solution.
 
 ##To scan for subnets
@@ -65,3 +63,8 @@ scan.getExternalIpAddress(function(ip){
     console.log('External IP = ' + ip);
  });
  ```
+ #Motivation
+ Used by a blog that I am currently writing for illustration and educational purposes.
+
+#License
+GPLv3
